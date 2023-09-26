@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "enter marks"
+read marks
+
+if [[ $marks -gt 90 ]]; then
+	echo "distinction"
+
+elif [[ $marks -ge 75 && $marks -le 90 ]]; then
+	echo "first"
+
+elif [[ $marks -ge 60 && $marks -le 75 ]]; then
+	echo "second"
+
+elif [[ $marks -ge 35 && $marks -le 60 ]]; then
+	echo "pass"
+
+else
+	echo "fail"
+fi
